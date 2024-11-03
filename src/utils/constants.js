@@ -12,3 +12,14 @@ export const API_OPTIONS = {
       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0OGY4NDYzZmRhMzQzZTAwY2I1M2ViMTJkNTVlYzhiNiIsIm5iZiI6MTczMDU0MzYxOS4zNjc4NTY3LCJzdWIiOiI2NzI1ZmRiYzBkOTIzZDk5MzU5ZjhlMzUiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.YFUHR30yYtkwPxhHuwgSkeHWFcEZ2P1zxrBhKxA1uzA",
   },
 };
+
+export const IMG_CDN = "https://image.tmdb.org/t/p/w400/";
+
+export const NETFLIXGB_URL =
+  "https://assets.nflxext.com/ffe/siteui/vlv3/151f3e1e-b2c9-4626-afcd-6b39d0b2694f/web/IN-en-20241028-TRIFECTA-perspective_bce9a321-39cb-4cce-8ba6-02dab4c72e53_large.jpg";
+
+export const SUPPORTED_LANG = [
+  { id: "en", name: "English" },
+  { id: "hindi", name: "hindi" },
+  { id: "spanish", name: "spanish" },
+];

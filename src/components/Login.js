@@ -9,6 +9,7 @@ import {
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { NETFLIXGB_URL } from "../utils/constants";
 
 const Login = () => {
   const [isSign, setIsSign] = useState(true);
@@ -50,7 +51,6 @@ const Login = () => {
             photoURL: "https://example.com/jane-q-user/profile.jpg",
           })
             .then(() => {
-              console.log(auth.currentUser);
               const { uid, email, displayName, photoURL } = auth.currentUser;
               dispatch(
                 addUser({
@@ -90,7 +90,7 @@ const Login = () => {
   };
 
   return (
-    <div className="relative bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/151f3e1e-b2c9-4626-afcd-6b39d0b2694f/web/IN-en-20241028-TRIFECTA-perspective_bce9a321-39cb-4cce-8ba6-02dab4c72e53_large.jpg')]">
+    <div className={"relative bg-[url('" + NETFLIXGB_URL + "')]"}>
       <Header />
 
       <div className="flex h-screen justify-center items-center">
