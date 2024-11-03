@@ -7,10 +7,10 @@ const useTopRatedMovies = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    getNowPlayingMovies();
+    getTopRatedMovies();
   }, []);
 
-  const getNowPlayingMovies = async () => {
+  const getTopRatedMovies = async () => {
     const data = await fetch(
       "https://api.themoviedb.org/3/movie/top_rated?page=1",
       API_OPTIONS

@@ -8,8 +8,7 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0OGY4NDYzZmRhMzQzZTAwY2I1M2ViMTJkNTVlYzhiNiIsIm5iZiI6MTczMDU0MzYxOS4zNjc4NTY3LCJzdWIiOiI2NzI1ZmRiYzBkOTIzZDk5MzU5ZjhlMzUiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.YFUHR30yYtkwPxhHuwgSkeHWFcEZ2P1zxrBhKxA1uzA",
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -23,3 +22,5 @@ export const SUPPORTED_LANG = [
   { id: "hindi", name: "hindi" },
   { id: "spanish", name: "spanish" },
 ];
+
+export const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
