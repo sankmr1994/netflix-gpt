@@ -27,6 +27,7 @@ const GptSearchBar = () => {
       "Act as a movie recommendation system and suggest some movies for the query : " +
       searchText.current.value +
       " only give names of 5 movies, comma seperated like the example result given ahead: don,sholy,kingkong,avenger,deadpool";
+
     const genAI = new GoogleGenerativeAI(GOOGLE_API_KEY);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const prompt = query;

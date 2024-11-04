@@ -5,7 +5,7 @@ import { NETFLIXGB_URL } from "../utils/constants";
 
 const GptSearch = () => {
   return (
-    <div className={"h-screen relative bg-[url('" + NETFLIXGB_URL + "')]"}>
+    <div>
       <GptSearchBar />
       <GptMovieSuggestion />
     </div>
